@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refund</title>
+    <link rel="icon"  href="../assets/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <nav class="nav-bar-container">
+            <div class="nav-bar-logo">
+                <img src="../assets/logo.png" alt="TechBridge Logo">
+            </div>
+            <div class="nav-bar-text-box">
+                <p class="nav-title">Tech<span class="highlight">Bridge</span></p>
+                <p class="nav-subtitle">
+                    <span>I</span> <span>n</span> <span>n</span> <span>o</span> <span>v</span> <span>a</span> <span>t</span> <span>i</span> <span>o</span> <span>n</span> <span>s</span>
+                </p>
+            </div>
+            <div class="nav-bar-content">
+                <a href="../index.html">Home</a>
+                <div class="nav-item dropdown-container">
+                    <a href="../contact-us-page/index.html" class="nav-link">Contact</a>
+                </div>
+            </div>
+            
+            <div class="nav-bar-register">
+                <a href="https://forms.gle/oCpMhUyM9N4Ce3mq5" target="_blank" class="nav-bar-button register-button">Register</a>
+                <a href="../../mentors-page/index.html" target="_blank" class="nav-bar-button contact-us-button">Mentor</a>
+            </div>
+            <!-- Hamburger Icon -->
+            <div class="hamburger" onclick="toggleSidebar()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <!-- Sidebar for Mobile View -->
+        <div class="sidebar" id="sidebar">
+            <!-- Close Button -->
+            <div class="close-btn" onclick="toggleSidebar()">&times;</div>
+            <a href="../../index.html" onclick="toggleSidebar()">Home</a>
+            <a href="../../index.html#finacial-aid-card" onclick="toggleSidebar()">Services</a>
+            <a href="https://forms.gle/oCpMhUyM9N4Ce3mq5" target="_blank" class="nav-bar-button ">Register</a>
+            <a href="../../mentors-page/index.html"  class="nav-bar-button contact-us-button">Mentor</a>
+        </div>
+        <div class="main-container fade">
+           
+            <div class="main-container-content fade">
+                <p class="header fade">Refund Policy</p>
+                <p class="intro-text fade">At TechBridge Innovation, we strive to ensure your complete satisfaction with our products. If you are not satisfied with your purchase, you may request a refund within 14 days of the purchase date. To be eligible for a refund, the following conditions must be met:</p>
+                <p class="intro-text-header fade">Eligibility
+                    <ul class="fade">
+                        <li>The request must be made within 14 days of the purchase date.</li>
+                        <li>The product must be in its original condition, unused, and in the original packaging.</li>
+                        <li>The product must be in its original condition, unused, and in the original packaging.</li>
+                    </ul class="fade">
+                </p>
+                
+                <p class="intro-text-header fade">How to Request a Refund</p>
+                <p class="intro-text fade">To initiate a refund, please follow these steps:
+                    <ul class="fade">
+                        <li>Contact us at <a>innovationtechbridge@gmail.com</a> with your order details, including the reason for the refund</li>
+                        <li>Our customer service team will review your request and, if approved, provide instructions for returning the product.</li>
+                        <li>Once we receive the returned product and verify its condition, we will process the refund.</li>
+                    </ul class="fade">
+                </p>
+                
+                <p class="intro-text-header fade">Refund Process</p>
+                <p class="intro-text fade">Refunds will be processed within 14 days of receiving the returned product. Refunds will be issued to the original payment method used for the purchase. Shipping and handling fees are non-refundable.</p>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="footer-content fade">
+                <div class="footer-info fade">
+                    <h4>TechBridge Innovation</h4>
+                    <p>No. 37, Bollineni Hillside, Perumbakkam, Chennai, 600100</p>
+                    <p><a href="tel:+919025469369">+91 9025469369</a></p>
+                    <p>Open Hours: <br> Mon - Sat: 11 am – 5 pm <br> Sunday: CLOSED</p>
+                </div>
+        
+                <div class="footer-links fade">
+                    <h4>Pages</h4>
+                    <ul class="fade">
+                        <li><a href="../privary-policy-page/index.html">Privacy Policy</a></li>
+                        <li><a href="../terms-condition-page/index.html">Terms and Conditions</a></li>
+                        <li><a href="../refund-page/index.html">Refund Policy</a></li>
+                    </ul class="fade">
+                </div>
+        
+                <div class="footer-social fade">
+                    <div><h4>Follow Us</h4></div>
+                    <div><a href="https://www.instagram.com/techbridge_innovations?igsh=cWRoNmJrZzRkenQ=" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">Instagram
+                    </a></div>
+                    <div><a href="https://www.linkedin.com/in/techbridge-innovations-413803329?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">LinkedIn
+                    </a></div>
+                </div>
+            </div>
+            <div class="footer-bottom fade">
+                <p>2024 &copy; All rights reserved by <span>TechBridge Innovation</span></p>
+            </div>
+        </footer>
+
+    </div>
+    <script>
+                //scroll animation function
+        
+        document.addEventListener('DOMContentLoaded', () => {
+        const fadeElements = document.querySelectorAll('.fade');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    entry.target.classList.remove('hidden');
+                } else if (entry.boundingClientRect.top > 0) { // Only fade out if the element is above
+                    entry.target.classList.add('hidden');
+                    entry.target.classList.remove('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+            fadeElements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
