@@ -91,6 +91,17 @@ html {
     transition: width 0.3s ease;
 }
 
+@media(max-width:768px){
+    .nav-title{
+        font-size: 1.2rem;
+    }
+    .nav-subtitle{
+        font-size: 1rem;
+    }
+    
+}
+
+
 /* Underline animation on hover */
 .nav-bar-content a:hover::after {
     width: 100%;

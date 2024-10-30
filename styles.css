@@ -1,9 +1,20 @@
+:root{
+    --primary-text-color:#333333;
+    --primary-background-color:#f4f4f4;
+    --primary-header-color:#8A2BE2;
+    --primary-dark-header-color:#6900b4;
+    --secondary-header-color:#4B0082;
+    --secondary-text-color:#00FFAB;
+    --secondary-dark-text-color:#008272;
+    --third-text-color:#007BFF;
+    --third-dark-text-color:#006aff;
+}
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    background-color:#f4f4f4 ;
+    background-color:var(--primary-background-color);
 }
 html {
     scroll-behavior: smooth;
@@ -14,7 +25,7 @@ html {
     justify-content: space-between;
     align-items: center;
     padding: 10px 30px;
-    background-color: #f4f4f4;
+    background-color: var(--primary-background-color);
     width: 100%;
     position: sticky;
     top: 0;
@@ -36,12 +47,12 @@ html {
 .nav-title {
     font-size: 2rem;
     font-weight: 700;
-    color: black;
+    color: var(--primary-text-color);
 }
 
 .nav-subtitle {
     font-size: 1.5rem;
-    color: #8A2BE2;
+    color: var(--primary-header-color);
     cursor: pointer;
     font-weight: 600;
 }
@@ -62,7 +73,7 @@ html {
 
 .nav-bar-content a {
     font-size: 1.3rem;
-    color: black;
+    color: var(--primary-text-color);
     text-decoration: none; /* Remove default underline */
     padding: 10px 15px;
     font-weight: 500;
@@ -72,7 +83,7 @@ html {
 
 /* Hover Effect with Underline */
 .nav-bar-content a:hover {
-    color: #8A2BE2; /* Change text color */
+    color: var(--primary-header-color); /* Change text color */
     font-size: 1.2rem;
 }
 
@@ -83,7 +94,7 @@ html {
     bottom: -2px; /* Adjust for spacing */
     width: 0;
     height: 2px;
-    background-color: #8A2BE2;
+    background-color: var(--primary-header-color);
     transition: width 0.3s ease;
 }
 
@@ -98,7 +109,7 @@ html {
 
 /* Active State Styling */
 .nav-link.active {
-    color: #4B0082;
+    color: var(--secondary-header-color);
     font-weight: bold;
     font-size: 1.2rem;
 }
@@ -108,7 +119,7 @@ html {
 }
 
 .dropdown-container {
-    background-color: #f4f4f4;
+    background-color: var(--primary-background-color);
     position: relative;
 }
 
@@ -116,7 +127,7 @@ html {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #f4f4f4;
+    background-color: var(--primary-background-color);
     width: 200px;
     padding: 10px 0;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
@@ -144,7 +155,7 @@ html {
     padding: 10px 20px;
     font-size: 1.2rem;
     color: white;
-    background-color: #00BFA5;
+    background-color: var(--secondary-text-color);
     border: none;
     border-radius: 5px;
     text-decoration: none;
@@ -152,16 +163,16 @@ html {
 }
 
 .nav-bar-button:hover {
-    background-color: #008272;
+    background-color: var(--secondary-dark-text-color);
     transform: translateY(-2px);
 }
 
 .contact-us-button {
-    background-color: #007BFF;
+    background-color: var(--third-text-color);
 }
 
 .contact-us-button:hover {
-    background-color: #006aff;
+    background-color: var(--third-dark-text-color);
 }
 
 .hamburger {
@@ -174,7 +185,7 @@ html {
     left: -250px;
     width: 250px;
     height: 100%;
-    background-color: #f4f4f4;
+    background-color: var(--primary-background-color);
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
@@ -190,7 +201,7 @@ html {
 
 .sidebar a {
     text-decoration: none;
-    color: black;
+    color: var(--primary-text-color);
     font-size: 1rem;
     padding: 10px;
     transition: background-color 0.3s ease;
@@ -214,7 +225,7 @@ html {
     font-size: 2rem;
     padding: 10px;
     cursor: pointer;
-    color: black;
+    color: var(--primary-text-color);
 }
 
 
@@ -269,7 +280,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f4f4f4;
+    background-color: var(--primary-background-color);
     overflow: hidden; /* Ensures ripple stays within the item */
     transition: transform 0.5s, background-color 0.5s, box-shadow 0.5s;
 }
@@ -293,7 +304,7 @@ html {
 
 
 .grid-item:hover {
-    border: 2px solid #8A2BE2;
+    border: 2px solid var(--primary-header-color);
     background-color: rgba(138, 43, 226, 0.3); /* Slight red background tint */
      /* Slight zoom effect */
     
@@ -314,13 +325,13 @@ html {
     z-index: 10;
     max-width: 80%;
     background-color: rgba(255, 255, 255, 0.8);
-    border: 2px solid #4B0082;
+    border: 2px solid var(--secondary-header-color);
     backdrop-filter: blur(10px) saturate(180%);
     -webkit-backdrop-filter: blur(10px) saturate(180%);
 }
 
 .container-1-content .header {
-    color: #6900b4; /* Deep violet for header */
+    color: var(--primary-dark-header-color); /* Deep violet for header */
     font-size: 3rem;
     width: 100%;
     font-weight: 600;
@@ -387,19 +398,19 @@ html {
 .header-container .header-1 {
     font-weight: 700;
     font-size: 3rem;
-    color: #8A2BE2;
+    color: var(--primary-header-color);
     margin: 0;
 }
 
 .header-container .header-1 span {
     font-size: 4rem;
-    color: #4B0082;
+    color: var(--secondary-header-color);
 }
 
 .header-container .header-2 {
     font-weight: 600;
     font-size: 1.2rem;
-    color: #00BFA5;
+    color: var(--secondary-text-color);
 }
 
 .header-container .header-3 {
@@ -409,7 +420,7 @@ html {
 .header-container .header-3 span {
     font-weight: 500;
     font-size: 1.2rem;
-    color: #4B0082;
+    color: var(--secondary-header-color);
 }
 
 .header-container-2 {
@@ -419,7 +430,7 @@ html {
 .header-container-2 p {
     font-weight: 600;
     font-size: 2.5rem;
-    color: black;
+    color: var(--primary-text-color);
 }
 
 /* Card container styling */
@@ -451,7 +462,7 @@ html {
     font-size: 2rem; /* Slightly smaller font size */
     font-weight: 700;
     margin: 5px; /* Reduced margin */
-    color: #8A2BE2;
+    color: var(--primary-header-color);
    
 }
 
@@ -459,7 +470,7 @@ html {
     padding: 10px 20px;
     font-size: 1.2rem;
     color: white;
-    background-color: #00BFA5;
+    background-color: var(--secondary-text-color);
     border: none;
     border-radius: 5px;
     text-decoration: none;
@@ -469,7 +480,7 @@ html {
 }
 
 .card-details-button:hover {
-    background-color: #008272;
+    background-color: var(--secondary-dark-text-color);
     transform: translateY(-2px);
 }
 
@@ -572,7 +583,7 @@ html {
     text-align: center;
     margin: 0 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-top: 6px solid #8A2BE2;
+    border-top: 6px solid var(--primary-header-color);
     position: relative; 
     height: 280px; 
 }
@@ -625,8 +636,8 @@ html {
     background-color: #fff;
     width: 40px;
     height: 40px;
-    border: 2px solid #8A2BE2;
-    color: #8A2BE2;
+    border: 2px solid var(--primary-header-color);
+    color: var(--primary-header-color);
     padding: 10px;
     cursor: pointer;
     border-radius: 50%;
@@ -730,15 +741,15 @@ html {
     font-size: 2rem;
     margin: 10px;
     margin-bottom: 5px;
-    color: #8A2BE2;
+    color: var(--primary-header-color);
 }
 .container-4 .header-container .header-1 span{
     font-size: 2.5rem;
-    color: #00BFA5;
+    color: var(--secondary-text-color);
 }
 .container-4 .header-container .header-2{
     font-size: 1rem;
-    color: black;
+    color: var(--primary-text-color);
 }
 .achievement-cards {
     display: flex;
@@ -775,7 +786,7 @@ html {
 .achievement-card .card-number {
     font-size: 40px; /* Reduced font size for a cleaner look */
     font-weight: bold;
-    color: #00BFA5;
+    color: var(--secondary-text-color);
     margin-bottom: 8px;
 }
 
@@ -846,7 +857,7 @@ footer {
 }
 
 .footer-info p a, .footer-links ul li a, .footer-social a {
-    color: #00BFA5;
+    color: var(--secondary-text-color);
     text-decoration: none;
     background-color: #1C1B29;
 }
@@ -905,7 +916,7 @@ footer {
 }
 
 .footer-bottom span {
-    color: #00BFA5;
+    color: var(--secondary-text-color);
     background-color: #1C1B29;
 }
 
@@ -951,7 +962,7 @@ footer {
     .hamburger span {
         width: 25px;
         height: 3px;
-        background-color: black;
+        background-color: var(--primary-text-color);
         margin: 4px 0;
         transition: all 0.3s;
     }
@@ -1021,7 +1032,7 @@ footer {
     }
     .container-4 .header-container .header-2{
         font-size: 1rem;
-        color: black;
+        color: var(--primary-text-color);
     }
 
     .achievement-card {
