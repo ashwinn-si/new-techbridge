@@ -4,7 +4,7 @@
     --primary-header-color:#8A2BE2;
     --primary-dark-header-color:#6900b4;
     --secondary-header-color:#4B0082;
-    --secondary-text-color:#00FFAB;
+    --secondary-text-color:#21bb88;
     --secondary-dark-text-color:#008272;
     --third-text-color:#007BFF;
     --third-dark-text-color:#006aff;
@@ -344,7 +344,7 @@ html {
 }
 
 .container-1-content .sub-header {
-    color: #00d6ba; /* Steel blue for sub-header */
+    color: var(--secondary-dark-text-color); /* Steel blue for sub-header */
     font-size: 1.2rem;
     font-weight: 500;
     text-align: left;
